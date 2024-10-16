@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coopArtesanos</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            background-image: url('https://i.ytimg.com/vi/H76OeKX-V0I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAc-cHsMdy1J5jxOkqAsDu1ebPagA.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Hace que la imagen permanezca fija al hacer scroll */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .navbar .title {
+            color: #fff;
+            font-size: 24px;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .navbar .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            background-color: #0d4659;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar .menu a:hover {
+            background-color: #0b6218;
+        }
+        /* Estilo para el menú desplegable */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9cda9; /* Naranja claro */
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 40px; /* Para que el dropdown no cubra el botón */
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: rgb(11, 64, 99); /* Color azul oscuro */
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .dropdown-content a:hover {
+            background-color: #cdf337; /* Color de fondo al pasar el ratón */
+            color: black; /* Cambia el color del texto a blanco */
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo del banner inferior */
+.contact-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 9999; /* Asegura que el banner esté encima del contenido */
+}
+
+.contact-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">CoopArtesanos</div>
+        <div class="menu">
+            <a href="#">Inicio</a>
+
+            <!-- Menú desplegable para "Nosotros" -->
+            <div class="dropdown">
+                <a href="#">Nosotros</a>
+                <div class="dropdown-content">
+                    <a href="mision.html">Misión</a>
+                    <a href="arte.html">¿Qué es CoopArtesanos?</a>
+                    <a href="ventas.html">¿Puntos de venta?</a>
+                </div>
+            </div>
+
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <!-- Banner inferior con logos y datos de contacto -->
+<div class="contact-banner">
+    <div class="contact-info">
+        <a href="https://wa.me/1234567890" target="_blank" class="contact-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" class="contact-logo">  123 456 7890
+        </a>
+        <a href="https://instagram.com/tu_cuenta_instagram" target="_blank" class="contact-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png" alt="Instagram" class="contact-logo"> @instagram
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
